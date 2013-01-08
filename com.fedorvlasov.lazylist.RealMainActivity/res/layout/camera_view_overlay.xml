@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/CameraLivePreviewLayout" 
+		android:gravity="right|center"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent">
+
+		<Button android:id="@+id/takepicture" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/camera"
+			android:layout_margin="10dp" />
+		
+		<Button android:id="@+id/viewAlbum" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/button_add"
+			android:layout_margin="10dp" />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/CameraSaveOrDiscardLayout" 
+		android:gravity="bottom|center"
+		android:visibility="gone" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<Button android:id="@+id/cameraSave" 
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Save" 
+			android:layout_gravity="bottom|center"
+			android:gravity="center" 
+			android:layout_margin="10dp" />
+
+		<Button android:id="@+id/cameraDiscard" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Discard"
+			android:layout_gravity="bottom|center"
+			android:gravity="center" 
+			android:layout_margin="10dp" />
+	</LinearLayout>
+</RelativeLayout>
