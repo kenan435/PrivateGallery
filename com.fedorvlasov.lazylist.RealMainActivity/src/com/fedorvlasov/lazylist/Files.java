@@ -29,7 +29,7 @@ public class Files {
 	            String ext;
 	            String path = pathname.getPath();
 	            ext = path.substring(path.lastIndexOf(".") + 1);
-	            return exts.contains(ext);
+	            return exts.contains(ext);  
 	        }
 	    };
 

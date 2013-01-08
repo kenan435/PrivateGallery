@@ -27,7 +27,7 @@ public class LazyAdapter extends BaseAdapter {
         return data.length;
     }
 
-    public Object getItem(int position) {
+    public Object getItem(int position) {         
         return position;
     }
 
@@ -57,5 +57,5 @@ public class LazyAdapter extends BaseAdapter {
         holder.image.setTag(data[position]);
         imageLoader.DisplayImage(data[position], activity, holder.image);
         return vi;
-    }
+    } // i just changed something
 }
