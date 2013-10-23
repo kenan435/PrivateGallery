@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_drawables"
+    android:orientation="vertical">
+
+    <!-- top pane -->
+    <View android:id="@+id/top_pane"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <LinearLayout
+        android:id="@+id/middle_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- center pane -->
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:background="@drawable/imagebotton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:gravity="bottom|left"
+            android:layout_weight="1"
+            android:text="Take Picture" />
+			
+
+  
+ 
+        <Button
+            android:id="@+id/button2"
+            android:background="@drawable/imagebotton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:layout_weight="1"
+            android:text="View Gallery" />
+            
+
+
+        </LinearLayout>
+
+    <!-- bottom pane -->
+    <View android:id="@+id/bottom_pane"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
